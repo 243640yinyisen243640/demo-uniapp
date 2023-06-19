@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本属性</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* 这个叫内部样式表 */
+        p {
+            /* 对齐方式  left(默认) right center */
+            text-align: center;
+            text-decoration: underline;
+            text-decoration: line-through;
+            /* 首行缩进 */
+            text-indent: 100px;
+            /* 这个是当前文字大小的两个位置 */
+            text-indent: 2em;
+            /* 行间距 */
+            line-height: 10px;
+        }
+
+        div {
+            font-size: 16px;
+            line-height: 26px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>我是一个美女</p>
+
+
+    <div>我是个非常漂亮的美女</div>
+    <!-- 行内样式表 -->
+    <p style="color: aqua; font-size: 17px;">我是一个美女呀</p>
+</body>
+
+</html>

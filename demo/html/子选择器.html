@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子选择器</title>
+
+    <style>
+        /* 只能是最接近的一级，孙子级就不行
+         */
+        div>a {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+
+        <a href="#">这是儿子</a>
+
+        <p class="nav">
+            <a href="#">这是孙子</a>
+        </p>
+    </div>
+
+</body>
+
+</html>
