@@ -5,9 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>显示模块的转换</title>
+
+    <style>
+        /* 把行内元素转换为块元素 */
+        span {
+            width: 500px;
+            height: 100px;
+            background-color: aquamarine;
+            display: block;
+        }
+
+        /* 把块元素转换成行元素以后设置宽高就没效果了 */
+        div {
+            width: 500px;
+            height: 100px;
+            background-color: aquamarine;
+            display: inline;
+        }
+
+        /* 把行内元素转换成行内块元素 */
+        a {
+            width: 500px;
+            height: 100px;
+            background-color: aquamarine;
+            display: inline-block;
+        }
+    </style>
 </head>
 
 <body>
+
+    <!-- 行内元素是不可以设置宽高的，我们可以转换，转换成块元素 -->
+    <span>我是一个行内元素</span>
+    <span>我是一个行内元素</span>
+
+
+    <div>我是一个块元素</div>
+    <div>我是一个块元素</div>
+
+    <a href="#">这是一个行内元素</a>
+    <a href="#">这是一个行内元素</a>
 
 </body>
 
