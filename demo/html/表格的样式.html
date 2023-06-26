@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格的样式</title>
+
+    <style>
+        /* 边框会影响盒子的大小，会加上 如果设置一个盒子的大小 长宽是200*200  如果边框是10，那么会变成210*210 */
+        table {
+            height: 249px;
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        th {
+            height: 35px;
+        }
+
+        table,
+        th,
+        td {
+            color: pink;
+            border-color: aquamarine;
+            border-style: dashed;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--  witdh="500" height="249" border="1" cellspacing="0" -->
+    <table align="center">
+
+        <thead>
+            <tr>
+                <th>名字</th>
+                <th>年龄</th>
+                <th>性别</th>
+                <th>爱好</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>张三</td>
+                <td>15</td>
+                <td>男</td>
+                <td>看书</td>
+            </tr>
+            <tr>
+                <td>王红</td>
+                <td>16</td>
+                <td>女</td>
+                <td>打球</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>17</td>
+                <td>男</td>
+                <td>篮球</td>
+            </tr>
+            <tr>
+                <td>王五</td>
+                <td>18</td>
+                <td>男</td>
+                <td>徒步</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>
