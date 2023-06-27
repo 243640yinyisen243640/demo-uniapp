@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>父元素塌陷问题</title>
+
+    <style>
+        .father {
+            width: 500px;
+            height: 500px;
+            /* border: 1px solid transparent; */
+            /* padding: 1px; */
+            overflow: hidden;
+            background-color: aqua;
+        }
+
+        /* 在子布局中，我们设置 margin会导致父布局移动，是叫外边距塌陷的问题，解决办法
+        1: border: 1px solid transparent;
+        给父布局写一个padding
+        2: padding: 1px;
+        3：overflow: hidden;
+        */
+        .son {
+            width: 100px;
+            height: 100px;
+            margin-top: 50px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="father">
+
+        <div class="son"></div>
+
+    </div>
+
+</body>
+
+</html>
