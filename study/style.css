@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    height: 100px;
+    width: 619px;
+    background-color: aqua;
+}
+
+
+
+.img {
+    float: left;
+}
+
+
+.nav {
+    margin-left: 20px;
+    float: left;
+}
+
+.nav ul li {
+    height: 42px;
+    padding: 0px 10px;
+    display: inline-block;
+}
+
+.nav ul li a:hover {
+    border-bottom: 1px solid blue;
+}
