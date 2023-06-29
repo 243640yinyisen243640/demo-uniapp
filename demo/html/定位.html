@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位</title>
+    <!--记住一句话：子绝父相 -->
+    <!-- 首先是 relative相对定位，相对定位是以自己为准则移动，位置保留
+        absolute绝对定位  是以父亲为准则，如果父亲没有定位,就以离他最近有定位的那一级为准则,如果都没有，就以浏览器为准 位置不保留
+    flexed 以浏览器的可视窗口为准则-->
+    <style>
+        body {
+            height: 8000px;
+        }
+
+        .div1 {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            position: relative;
+            top: 10px;
+            left: 10px;
+        }
+
+        .father {
+            position: fixed;
+            width: 300px;
+            height: 300px;
+            background-color: black;
+        }
+
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: greenyellow;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+
+        /* 绝对定位  子绝父相 */
+        .son1 {
+            width: 100px;
+            height: 100px;
+            background-color: greenyellow;
+            position: absolute;
+        }
+
+        /* 固定定位 */
+
+        .div3 {
+            width: 700px;
+            height: 700px;
+            position: fixed;
+            top: 100px;
+            left: 100px;
+            background-color: pink;
+        }
+
+        .div4 {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: sticky;
+            right: 100px;
+            bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 粘性定位 -->
+    <!-- <div class="div4">
+
+    </div>
+
+    <div class="father">
+        <div class="son">
+
+        </div>
+        <div class="son1">
+
+        </div>
+    </div>
+
+    <div class="div3">
+
+    </div> -->
+    <div class="div4">
+
+    </div>
+
+
+    <!-- <em>
+        <img src="3.png" alt="">
+    </em>
+    <img src="3.png" alt=""> -->
+
+
+
+</body>
+
+</html>

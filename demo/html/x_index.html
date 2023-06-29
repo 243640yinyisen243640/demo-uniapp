@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>x_index</title>
+    <!-- 同为fixed的，z_index越大 越在上面 -->
+    <style>
+        .div1 {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            z-index: 1;
+            position: fixed;
+        }
+
+        .div2 {
+            width: 100px;
+            height: 100px;
+            z-index: 3;
+            background-color: pink;
+            position: fixed;
+        }
+
+        .div3 {
+            width: 100px;
+            height: 100px;
+            z-index: 2;
+            background-color: aquamarine;
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</body>
+
+</html>

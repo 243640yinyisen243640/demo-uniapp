@@ -39,3 +39,23 @@ li {
 .nav ul li a:hover {
     border-bottom: 1px solid blue;
 }
+
+.search input {
+    border: 1px solid blue;
+    float: left;
+    padding-left: 15px;
+    height: 39px;
+}
+
+
+
+.search button {
+    border: 0px;
+    background-color: blue;
+    height: 42px;
+    background: url(img/logo.png);
+}
+
+.headImg {
+    float: right;
+}
