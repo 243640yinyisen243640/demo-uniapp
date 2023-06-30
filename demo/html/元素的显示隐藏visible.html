@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素的显示隐藏visible</title>
+    <!-- hidden  visible  占有原来的位置 -->
+    <style>
+        .div1 {
+            width: 100px;
+            height: 100px;
+            visibility: hidden;
+            background-color: pink;
+
+        }
+
+        /*我盒子中的内容太多了，会溢出，overflow: visible;(默认)
+            overflow: hidden;超出盒子的补分隐藏 
+            overflow: scroll 溢出和不溢出都显示滚动条
+            overflow: auto 溢出的时候显示 */
+        .div2 {
+            width: 100px;
+            height: 100px;
+            /* overflow: visible;
+            overflow: hidden; */
+            /* overflow: scroll; */
+            overflow: auto;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="div1">
+        122
+    </div>
+    <div class="div2">
+        122
+    </div>
+</body>
+
+</html>
