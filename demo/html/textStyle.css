@@ -1,0 +1,13 @@
+    /* 文本一行展示 */
+    .over {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        text-overflow: ellipsis;
+        /* 强制一行 */
+        white-space: nowrap;
+        /* 多余的部分隐藏 */
+        overflow: hidden;
+        /* 多出的部分用省略号代替 */
+        margin: 50px auto;
+    }
