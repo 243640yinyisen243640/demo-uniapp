@@ -7,6 +7,10 @@
     <title>块级元素</title>
 
     <style>
+        .box {
+            text-align: center;
+        }
+
         .box a {
             display: inline-block;
             width: 30px;
@@ -18,19 +22,30 @@
             border: 1px solid gold;
             margin: 10px auto;
         }
+
+        .box .soOn {
+            background-color: transparent;
+            border: 0px solid transparent;
+        }
+
+        .box .prev,
+        .box .next {
+            font-size: 12px;
+            width: 70px;
+        }
     </style>
 </head>
 
 <body>
     <div class="box">
-        <a href="#">1</a>
+        <a href="#" class="prev">&lt;&lt;上一页</a>
         <a href="#">2</a>
         <a href="#">3</a>
         <a href="#">4</a>
         <a href="#">5</a>
-        <a href="#">6</a>
+        <a href="#" class="soOn">...</a>
         <a href="#">7</a>
-        <a href="#">8</a>
+        <a href="#" class="next">下一页&lt;&lt;</a>
     </div>
 </body>
 

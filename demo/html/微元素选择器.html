@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微元素选择器</title>
+    <!-- 这不是一个标签   是个行内元素，设置宽高是没有效果的
+ -->
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?wvsz3v');
+            src: url('fonts/icomoon.eot?wvsz3v#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?wvsz3v') format('truetype'),
+                url('fonts/icomoon.woff?wvsz3v') format('woff'),
+                url('fonts/icomoon.svg?wvsz3v#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+
+        div {
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            position: relative;
+            background-color: pink;
+        }
+
+        div::after {
+            position: absolute;
+            top: 10px;
+            text-align: center;
+            right: 10px;
+            font-family: 'icomoon';
+            content: '';
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        是
+    </div>
+
+</body>
+
+</html>
