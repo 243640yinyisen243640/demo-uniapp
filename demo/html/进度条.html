@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .father {
+            width: 100px;
+            height: 20px;
+            border: 1px solid red;
+            border-radius: 10px;
+        }
+
+        .in {
+            border-radius: 10px 0 0 10px;
+            width: 50px;
+            height: 100%;
+            transition: all .5s;
+            background-color: red;
+        }
+
+        /* 点击整个盒子，里面的in变化 */
+        .father:hover .in {
+            width: 100%;
+            border-radius: 10px 10px 10px 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="father">
+        <div class="in">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
